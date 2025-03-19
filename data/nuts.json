@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Salted Peanuts",
+      "ingredients": ["Peanuts", "Salt", "Vegetable Oil"],
+      "description": "Classic bar snack with a crunchy texture and a salty kick.",
+      "price": 3.99
+    },
+    {
+      "id": 2,
+      "name": "Spicy Cashews",
+      "ingredients": ["Cashews", "Chili Powder", "Salt", "Vegetable Oil"],
+      "description": "Roasted cashews with a bold, spicy seasoning for a fiery snack.",
+      "price": 5.49
+    },
+    {
+      "id": 3,
+      "name": "Honey Roasted Almonds",
+      "ingredients": ["Almonds", "Honey", "Sugar", "Salt"],
+      "description": "Crunchy almonds coated in a sweet and salty honey glaze.",
+      "price": 5.99
+    },
+    {
+      "id": 4,
+      "name": "Smoked Paprika Pistachios",
+      "ingredients": ["Pistachios", "Smoked Paprika", "Salt"],
+      "description": "Savory pistachios with a smoky and slightly spicy flavor, perfect for pairing with drinks.",
+      "price": 6.29
+    }
+  ]
+  
+  

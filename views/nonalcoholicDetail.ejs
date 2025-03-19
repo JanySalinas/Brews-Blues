@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title><%= na.name %> Detail</title>
+</head>
+<body>
+  <div class="detail-container nonalcoholic-container">
+    <h1><%= na.name %></h1>
+    <img src="<%= na.image %>" alt="<%= na.name %>" width="200">
+    <p><%= na.description %></p>
+    <p><strong>Ingredients:</strong> <%= na.ingredients.join(', ') %></p>
+    <p><strong>Price:</strong> $<%= na.price %></p>
+    <a href="/menu">Back to menu<menu></menu></a>
+  </div>
+</body>
+</html>

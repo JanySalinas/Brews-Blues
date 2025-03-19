@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title><%= mocktail.name %> Detail</title>
+</head>
+<body>
+  <div class="detail-container mocktail-container">
+    <h1><%= mocktail.name %></h1>
+    <img class="detail-img" src="<%= mocktail.image %>" alt="<%= mocktail.name %>" width="200">
+    <p><%= mocktail.description %></p>
+    <p><strong>Ingredients:</strong> <%= mocktail.ingredients.join(', ') %></p>
+    <p><strong>Price:</strong> $<%= mocktail.price %></p>
+    <a href="/menu">Back to menu</a>
+  </div>
+</body>
+</html>

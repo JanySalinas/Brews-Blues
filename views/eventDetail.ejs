@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= event.title %></title>
+  <link rel="stylesheet" href="/css/events.css">
+</head>
+<body>
+  <div class="event-detail">
+    <h1><%= event.title %></h1>
+    <img src="<%= event.image %>" alt="<%= event.title %>">
+    <div class="event-info">
+      <p class="artist"><strong>Artist:</strong> <%= event.artist %></p>
+      <p class="date"><strong>Date:</strong> <%= event.date %></p>
+      <p class="time"><strong>Time:</strong> <%= event.time %></p>
+      <p class="description"><%= event.description %></p>
+      <p class="venue"><strong>Venue:</strong> <%= event.venue %></p>
+      <p class="tickets"><strong>Tickets:</strong> <%= event.tickets %></p>
+      <!-- Modal trigger for song -->
+      <a href="#" id="open-song" class="song-link">Listen to Song</a>
+      <a href="<%= event.ticketsLink %>" target="_blank" class="buy-tickets">Buy Tickets</a>
+      <a href="/events" class="back-link">Back to Events</a>
+    </div>
+  </div>
+  <!-- <footer>
+    <button class="homepage-btn" onclick="location.href='/drinks'">Homepage</button>
+  </footer> -->
+  <!-- Modal for YouTube Video -->
+  <div id="song-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="song-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("song-modal");
+    const openSong = document.getElementById("open-song");
+    const closeBtn = document.querySelector(".modal .close");
+    const iframe = document.getElementById("song-iframe");
+
+    // Show modal and load YouTube URL with autoplay
+    openSong.addEventListener("click", function(e) {
+      e.preventDefault();
+      iframe.src = "<%= event.songLink %>?autoplay=1";
+      modal.style.display = "block";
+    });
+
+    // Close modal and clear iframe
+    closeBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+      iframe.src = "";
+    });
+
+    // Close modal if clicking outside modal-content
+    window.addEventListener("click", function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        iframe.src = "";
+      }
+    });
+  </script>
+</body>
+</html>

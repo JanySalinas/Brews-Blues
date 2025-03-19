@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <title>Reserve a Table</title>
+</head>
+<body>
+  <div class="reservation-container">
+    <h1>Table Reservation</h1>
+
+    <form id="reservationForm" method="POST" action="/reservations">
+
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+      <label for="reservationTime">Reservation Time:</label>
+      <input type="time" id="reservationTime" name="reservationTime" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" required>
+
+      <button type="submit">Reserve</button>
+    </form>
+
+    <div class="return-home">
+      <button onclick="location.href='/drinks'">Return to Homepage</button>
+    </div>  
+    
+    <!-- Confirmation message (hidden by default) -->
+    <div id="confirmation" style="display: none; text-align: center; margin-top: 20px;">
+      <p>Reservation Complete!<br>Thank you for reserving a table with us.</p>
+      <button onclick="location.href='/drinks'">Go to Drinks</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

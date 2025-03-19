@@ -1,0 +1,503 @@
+/* Rule for images if you want them small on the list page */
+.list-img {
+  width: 100px; /* adjust width as needed */
+  height: auto;
+}
+
+.detail-img {
+  width: 200px; /* adjust to your desired width */
+  height: auto;
+}
+body {
+  background-image: url('/image/jazzbar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff; /* sets default text color to white */
+}
+h1 {
+  color: #fff;
+}
+a {
+  color: #fff;
+ 
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: -1;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.welcome-header {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2.1em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.beers-section {
+  width: 15%;
+  float: right;
+  /* additional styling, e.g., padding, margin */
+}
+
+/* COCKTAILS */
+.drink-detail-container {
+  position: absolute;
+  top: 50px !important;  /* Moved further up */
+  left: 0;
+  width: 40%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.drinks-section {
+  width: 15%;
+  float: left;
+  margin-top: -95px; /* adjust this negative value as needed */
+}
+
+.drinks-header {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #00ffcc; /* change to your desired color */
+  text-shadow: 1px 1px #007777;
+  animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+/* MOCKTAILS */
+/* Add this block under your MOCKTAILS comment in style.css */
+/* MOCKTAILS */
+.mocktail-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 40%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mocktails-section{
+  width: 15%;
+  position: absolute;
+  top: 432px;      /* adjust as needed */
+  left: 3;        /* flush to the right */
+}
+
+.mocktail-header {
+  font-family: 'Lato', sans-serif;
+  color: #ff6666; /* change to your desired color */
+  text-shadow: 1px 1px #336699;
+  animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+/* BEERS */
+.beer-detail-container {
+  position: absolute;
+  top: 50px;            /* Adjust the top position as needed */
+  right: 0;             /* Aligns to the right side */
+  width: 40%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.beers-section {
+  width: 15%;
+  float: right;
+  margin-top: -85px; /* adjust this negative value as needed */
+}
+
+.beers-header {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #00ffcc; /* new color */
+  text-shadow: 1px 1px #990066;
+  animation: bounce 0.8s infinite alternate;
+}
+
+/* reuse bounce keyframes already defined
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+*/
+
+/* NON ALCOHOLIC */
+.nonalcoholic-container {
+  position: absolute;
+  top: 50px;          /* adjust the top position as needed */
+  right: 0;           /* if you want to align it on the right */
+  width: 40%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.nonalcoholic-section {
+  width: 15%;
+  position: absolute;
+  top: 432px;      /* adjust as needed */
+  right: 0;        /* flush to the right */
+}
+
+.nonalcoholic-header {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color:#ff6666;  /* choose your desired color */
+  text-shadow: 1px 1px #CC7A00;
+  animation: bounce 0.8s infinite alternate;
+}
+
+/* Ensure the bounce keyframes are defined, or reuse them if already present */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+/* IDK WHAT IT IS */
+.beers-section {
+  width: 15%;
+  float: right;
+  /* additional styling, e.g., padding, margin */
+} 
+
+/* BLINKING JAZZ HEADER */
+.blinking-header {
+  text-align: center;
+  font-size: 2em;
+  animation: blink 1s infinite alternate;
+  color: #fff; /* or any desired color */
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* STAPLETON */
+.stapleton-header {
+  text-align: center;
+  font-size: 1.5em;
+  animation: blink-stapleton 0.5s infinite alternate;
+}
+
+/* New keyframes for color-blinking */
+@keyframes blink-stapleton {
+  0% {
+    color: white;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: transparent;
+  padding: 1rem;          /* Adds some vertical spacing */
+}
+
+.navbar ul {
+  list-style: none;       /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;          /* Make the links sit side-by-side */
+  justify-content: center;/* Center all nav items */
+}
+
+.navbar li {
+  margin: 0 1rem;         /* Space between items */
+}
+
+.navbar a {
+  color: #fff;            /* White links on dark background */
+  text-decoration: none;  /* Remove underline */
+  font-weight: bold;      /* Make links stand out */
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #ffd700;         /* Golden hover color */
+}
+ /* RESERVATION */
+.reservation-container {
+  width: 40%;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.reservation-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reservation-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-container label {
+  margin-bottom: 5px;
+}
+
+.reservation-container input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.reservation-container button {
+  padding: 10px;
+  background: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reservation-container button:hover {
+  background: #e6c200;
+}
+
+/* CONTACT  */
+.contact-container {
+  width: 40%;
+  margin: 50px auto;
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin-bottom: 5px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-container button {
+  padding: 10px;
+  background: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-container button:hover {
+  background: #e6c200;
+}
+
+/* ABOUT */
+.about-container {
+  width: 60%;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.about-container h1 {
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-container button {
+  padding: 10px;
+  background: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.about-container button:hover {
+  background: #e6c200;
+}
+
+/* RAINBOW STUFF */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999; /* ensures it stays on top if needed */
+}
+/* RAINBOW STUFF */
+@keyframes rainbowAnimation {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: green; }
+  66%  { color: blue; }
+  83%  { color: indigo; }
+  100% { color: violet; }
+}
+
+/* Use this class for footer text */
+.rainbow-text-mini {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  animation: rainbowAnimation 3s infinite;
+}
+ /* Homepage button */
+button {
+  padding: 10px;
+  background: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #e6c200;
+}
+
+/* Menu header for the drinks  */
+.Menu-header {
+  font-size: 1.2em;
+  /* background-color: #ffeb3b; */
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Menu-header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #d32f2f;
+  text-shadow: 2px 2px #ffa000;
+  animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+/* nuts section */
+.nuts-section {
+  width: 40%;
+  margin: 40px auto; /* Centers horizontally */
+  background-color: rgba(255, 255, 204, 0.2);
+  padding: 20px;
+  /* border: 2px dashed #ffd700; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nuts-header {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ffd700;
+  text-shadow: 1px 1px #ff9800;
+  animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.nuts-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* removing bullets */
+.drinks-section ul,
+.beers-section ul,
+.nonalcoholic-section ul,
+.mocktails-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1, h2, h3, .drinks-header, .beers-header, .nonalcoholic-header, .mocktail-header, .nuts-header {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* return home button */
+.return-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.return-home button {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.return-home button:hover {
+  background-color: #e6c200;
+}

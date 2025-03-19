@@ -1,0 +1,187 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;      /* Adjust as needed */
+  color: #ffcc00;       /* Bright accent color */
+  margin: 40px 0 20px;  /* Top and bottom margin */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #eee;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.event-card {
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 255px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto; /* ensures the full perspective of the image */
+  max-height: 150px; /* optional: limits the size without cropping */
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.event-card a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Event Detail Page Modern Styling */
+.event-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.event-detail h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.event-detail img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.event-detail .event-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.event-detail .back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #ffcc00, #ffd233);
+  color: #333;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-detail .back-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-content h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.homepage-btn {
+  background: linear-gradient(145deg, #ffcc00, #ffd233);
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.homepage-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+  .song-link,
+.buy-tickets {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #ffcc00, #ffd233);
+  color: #333;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.song-link:hover,
+.buy-tickets:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* youtube link */
+/* YouTube Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 5%;       /* Moves the modal further up */
+  left: 5%;      /* Aligns modal to the left side */
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}

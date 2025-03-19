@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Lemonade",
+    "ingredients": [
+      "Lemon",
+      "Vodka",
+      "Water"
+    ],
+    "image": "/image/lemonade.jpg",
+    "description": "A refreshing citrus drink with vodka.",
+    "price": 5.99
+  },
+  {
+    "id": 2,
+    "name": "Mojito",
+    "ingredients": [
+      "Mint",
+      "Lime",
+      "Sugar",
+      "Rum"
+    ],
+    "image":"/image/mojito.jpg",
+    "description": "A refreshing cocktail with mint.",
+    "price": 8.99
+  },
+  {
+    "id": 3,
+    "name": "Dirty Martini",
+    "ingredients": [
+      "Vodka",
+      "Dry Vermouth",
+      "Olive Brine",
+      "Olives"
+    ],
+    "image":"/image/dirtymartini.jpg",
+    "description": "A savory and briny variation of the classic Martini.",
+    "price": 12.99
+  },
+  {
+    "id": 4,
+    "name": "Blue Lagoon",
+    "ingredients": [
+      "Blue Curacao",
+      "Vodka",
+      "Lemonade",
+      "Lemon"
+    ],
+    "image":"/image/bluelagoon.webp",
+    "description": "A vibrant and refreshing tropical cocktail.",
+    "price": 10.99
+  },
+  {
+    "id": 5,
+    "name": "Whiskey Sour",
+    "ingredients": [
+      "Whiskey",
+      "Lemon Juice",
+      "Sugar",
+      "Egg White (optional)"
+    ],
+    "image":"/image/whiskysour.webp",
+    "description": "A tart and sweet cocktail with a smooth finish.",
+    "price": 9.99
+  },
+  {
+    "id": 6,
+    "name": "Piña Colada",
+    "ingredients": [
+      "Rum",
+      "Coconut Cream",
+      "Pineapple Juice",
+      "Pineapple Slice"
+    ],
+    "image":"/image/pinacolada.jpg",
+    "description": "A creamy, tropical cocktail with coconut and pineapple flavors.",
+    "price": 11.99
+  },
+  {
+    "id": 7,
+    "name": "Margarita",
+    "ingredients": [
+      "Tequila",
+      "Lime Juice",
+      "Triple Sec",
+      "Salt (for rim)"
+    ],
+    "image":"/image/margarita.jpg",
+    "description": "A tangy and zesty cocktail often served with a salted rim.",
+    "price": 10.99
+  },
+  {
+    "id": 8,
+    "name": "Old Fashioned",
+    "ingredients": [
+      "Whiskey",
+      "Sugar Cube",
+      "Angostura Bitters",
+      "Orange Peel"
+    ],
+    "image":"/image/oldfashioned.jpg",
+    "description": "A classic cocktail with a rich and smooth flavor profile.",
+    "price": 12.99
+  },
+  {
+    "id": 9,
+    "name": "Cosmopolitan",
+    "ingredients": [
+      "Vodka",
+      "Triple Sec",
+      "Cranberry Juice",
+      "Lime Juice"
+    ],
+    "image":"/image/cosmopolitan.jpg",
+    "description": "A tangy and fruity cocktail popularized by 'Sex and the City.'",
+    "price": 11.99
+  },
+  {
+    "id": 10,
+    "name": "Mai Tai",
+    "ingredients": [
+      "Rum",
+      "Lime Juice",
+      "Orange Curaçao",
+      "Orgeat Syrup",
+      "Mint"
+    ],
+    "image":"/image/maitai.jpg",
+    "description": "A tropical cocktail with a mix of rum and fruity flavors.",
+    "price": 13.99
+  },
+  {
+    "id": 11,
+    "name": "Dry Martini",
+    "ingredients": [
+      "Vodka",
+      "Dry Vermouth",
+      "Lemon Twist (optional)",
+      "Olives"
+    ],
+    "image":"/image/drymartini.jpg",
+    "description": "The Dry Martini is a timeless cocktail of vodka and dry vermouth, served with a lemon twist or olives.",
+    "price": 14.99
+  }
+]

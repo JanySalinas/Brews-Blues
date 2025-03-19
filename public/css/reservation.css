@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #150f0f; /* Grayish background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #ebe9e9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.contact-entry {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.contact-info strong {
+    color: #555;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.actions form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #d35400; /* Dark orange button */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b; /* Slightly darker on hover */
+}
+
+.return-home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.return-home button {
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .actions form {
+        flex-direction: column;
+    }
+}

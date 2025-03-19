@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Hoppy Zero IPA",
+      "ingredients": [
+        "Barley",
+        "Hops",
+        "Water",
+        "Yeast"
+      ],
+      "image": "/image/hoppy.jpg",
+      "description": "A non-alcoholic IPA with bold hoppy flavors and a crisp finish.",
+      "price": 5.99
+    },
+    {
+      "id": 2,
+      "name": "Golden Wheat 0.0",
+      "ingredients": [
+        "Wheat Malt",
+        "Hops",
+        "Water",
+        "Yeast"
+      ],
+      "image": "/image/golden.jpg",
+      "description": "A smooth and refreshing wheat beer without the alcohol.",
+      "price": 5.99
+    },
+    {
+      "id": 3,
+      "name": "Citrus Radler NA",
+      "ingredients": [
+        "Lemon",
+        "Barley Malt",
+        "Hops",
+        "Water",
+        "Yeast"
+      ],
+      "image": "/image/citrus.jpg",
+      "description": "A zesty and citrusy radler with a light and bubbly body.",
+      "price": 6.49
+    },
+    {
+      "id": 4,
+      "name": "Dark Malt Free",
+      "ingredients": [
+        "Roasted Malt",
+        "Hops",
+        "Water",
+        "Yeast"
+      ],
+      "image": "/image/dark.jpg",
+      "description": "A rich and malty non-alcoholic dark beer with notes of caramel and chocolate.",
+      "price": 7.29
+    }
+  ]
+  

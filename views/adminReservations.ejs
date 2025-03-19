@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/reservation.css">
+  <title>Admin Reservations</title>
+</head>
+<body>
+  <h1>All Reservations</h1>
+  <div class="contacts-container">
+    <% reservations.forEach(function(r){ %>
+      <div class="contact-entry">
+        <div class="contact-info">
+          <p><strong>Name:</strong> <%= r.firstName %> <%= r.lastName %> </p>
+          <p><strong>Email:</strong> <%= r.email %></p>
+          <p><strong>Guests:</strong> <%= r.guests %></p>
+          <p><strong>Time:</strong> <%= r.reservationTime %></p>
+        </div>
+        <div class="actions">
+          <!-- Delete form -->
+          <form method="POST" action="/admin/reservations/<%= r.id %>/delete" class="delete-form">
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+  <div class="return-home">
+    <button onclick="location.href='/admin'">Back to Dashboard</button>
+  </div>
+</body>
+</html>

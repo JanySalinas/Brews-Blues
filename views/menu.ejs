@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <title>Menu</title>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/reservations">Reservation</a></li>
+        <li><a href="/about">About Us</a></li>
+      </ul>
+    </nav>
+    <header class="Menu-header">
+        <h1>MENU</h1>
+      </header>
+  </header>
+  
+  <div class="clearfix">
+    <section class="drinks-section">
+      <h2 class="drinks-header">Cocktails</h2>
+      <ul>
+        <% drinks.forEach(drink => { %>
+          <li>
+            <a href="/drinks/<%= drink.id %>"><%= drink.name %></a> - $<%= drink.price %>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <section class="beers-section">
+      <h2 class="beers-header">Beers</h2>
+      <ul>
+        <% beers.forEach(beer => { %>
+          <li>
+            <a href="/beers/<%= beer.id %>"><%= beer.name %></a> - $<%= beer.price %>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+    <section class="nonalcoholic-section">
+      <h2 class="nonalcoholic-header">Non Alcoholic</h2>
+      <ul>
+        <% nonAlcoholic.forEach(na => { %>
+          <li>
+            <a href="/nonalcoholic/<%= na.id %>"><%= na.name %></a> - $<%= na.price %>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+    
+    <section class="mocktails-section">
+      <h2 class="mocktail-header">Mocktails</h2>
+      <ul>
+        <% mocktails.forEach(mocktail => { %>
+          <li>
+            <a href="/mocktails/<%= mocktail.id %>"><%= mocktail.name %></a> - $<%= mocktail.price %>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <section class="nuts-section">
+      <h2 class="nuts-header">Feeling a bit peckish for some nuts?</h2>
+      <ul>
+        <% nuts.forEach(nut => { %>
+          <li>
+            <%= nut.name %> - $<%= nut.price %>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+<footer>
+    <button onclick="location.href='/drinks'">Return to Homepage</button>
+  </footer>
+</html>

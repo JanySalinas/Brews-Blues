@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Saison",
+    "ingredients": [
+      "Pale Malt",
+      "Hops",
+      "Water",
+      "Yeast",
+      "Spices"
+    ],
+    "image": "/image/saison.jpg",
+    "description": "A farmhouse ale with a dry, spicy, and fruity character.",
+    "price": 7.99
+  },
+  {
+    "id": 2,
+    "name": "Gose",
+    "ingredients": [
+      "Wheat Malt",
+      "Coriander",
+      "Salt",
+      "Hops",
+      "Water",
+      "Yeast"
+    ],
+    "image": "/image/gose.png",
+    "description": "A sour and salty German wheat beer with a refreshing citrus tang.",
+    "price": 8.49
+  },
+  {
+    "id": 3,
+    "name": "Hazy New England IPA",
+    "ingredients": [
+      "Oats",
+      "Hops",
+      "Barley",
+      "Water",
+      "Yeast"
+    ],
+    "image": "/image/hazy.jpg",
+    "description": "A juicy, hazy IPA bursting with tropical fruit flavors and low bitterness.",
+    "price": 9.99
+  },
+  {
+    "id": 4,
+    "name": "Mexican Lager",
+    "ingredients": [
+      "Corn",
+      "Pilsner Malt",
+      "Hops",
+      "Water",
+      "Yeast"
+    ],
+    "image": "/image/mexican.jpg",
+    "description": "A crisp and light-bodied lager with a smooth, slightly sweet finish.",
+    "price": 6.99
+  },
+  {
+    "id": 5,
+    "name": "Hawaiian Pineapple Sour",
+    "ingredients": [
+      "Pineapple",
+      "Wheat Malt",
+      "Hops",
+      "Water",
+      "Yeast"
+    ],
+    "image": "/image/hawaiian.jpg",
+    "description": "A tropical sour beer with bright pineapple flavors and a tart finish.",
+    "price": 8.99
+  },
+  {
+    "id": 6,
+    "name": "California Common",
+    "ingredients": [
+      "Pale Malt",
+      "Northern Brewer Hops",
+      "Water",
+      "Yeast"
+    ],
+    "image": "/image/california.jpg",
+    "description": "A hybrid beer with a toasty malt backbone and a crisp, slightly woody hop character.",
+    "price": 7.49
+  }
+]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events</title>
+    <link rel="stylesheet" href="/css/events.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Brews & Blues</h1>
+            <button class="homepage-btn" onclick="location.href='/drinks'">Homepage</button>
+        </div>
+    </header>
+
+    <h1>Upcoming Events</h1>
+    <div class="event-container">
+        <% events.forEach(event => { %>
+            <div class="event-card">
+                <img src="<%= event.image %>" alt="<%= event.title %>">
+                <h2><%= event.title %></h2>
+                <p><strong>Artist:</strong> <%= event.artist %></p>
+                <p><strong>Date:</strong> <%= event.date %></p>
+                <p><strong>Time:</strong> <%= event.time %></p>
+                <p><%= event.description %></p>
+                <p><strong>Venue:</strong> <%= event.venue %></p>
+                <p><strong>Tickets:</strong> <%= event.tickets %></p>
+                <a href="/events/<%= event.id %>">Read More</a>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

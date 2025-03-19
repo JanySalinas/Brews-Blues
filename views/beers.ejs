@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Header with Beers on the right side -->
+  <header class="beers-header">
+    <h1>All Beers</h1>
+  </header>
+  <ul>
+    <% beers.forEach(beer => { %>
+      <li>
+        <a href="/beers/<%= beer.id %>"><%= beer.name %></a>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/menu">Back to menu</a>
+</body>
+</html>

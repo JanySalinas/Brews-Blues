@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/admin.css">
+  <title>Admin Contacts</title>
+</head>
+<body>
+  <h1>All Contact Messages</h1>
+  <div class="contacts-container">
+    <% contacts.forEach(function(c){ %>
+      <div class="contact-entry">
+        <div class="contact-info">
+          <p><strong>Name:</strong> <%= c.name %></p>
+          <p><strong>Email:</strong> <%= c.email %></p>
+          <p><strong>Message:</strong> <%= c.message %></p>
+        </div>
+        <div class="actions">
+          <!-- Delete form -->
+          <form method="POST" action="/admin/contacts/<%= c.id %>/delete" class="delete-form">
+            <button type="submit">Delete</button>
+          </form>
+          <!-- Reply form -->
+          <form method="POST" action="/admin/contacts/<%= c.id %>/reply" class="reply-form">
+            <textarea name="reply" placeholder="Type your reply here..." required></textarea>
+            <button type="submit">Send Reply</button>
+          </form>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+  <div class="return-home">
+    <button onclick="location.href='/drinks'">Return to Homepage</button>
+    <button onclick="location.href='/admin'">Back to Dashboard</button>
+  </div>
+</body>
+</html>

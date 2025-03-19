@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <title><%= beer.name %></title>
+</head>
+<body>
+  <div class="beer-detail-container">
+    <h1><%= beer.name %></h1>
+    <img class="detail-img" src="<%= beer.image %>" alt="<%= beer.name %>">
+    <p><%= beer.description %></p>
+    <ul>
+      <% beer.ingredients.forEach(item => { %>
+        <li><%= item %></li>
+      <% }) %>
+    </ul>
+    <a href="/menu">Back to Menu</a>
+  </div>
+</body>
+</html>

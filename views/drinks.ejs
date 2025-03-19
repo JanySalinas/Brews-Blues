@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drinks List</title>
+</head>
+<body>
+    <h1>Available Drinks</h1>
+    <ul>
+        <% drinks.forEach(drink => { %>
+            <li>
+                <h2><%= drink.name %></h2>
+                <img src="<%= drink.image %>" alt="<%= drink.name %>" width="200">
+                <p><%= drink.description %></p>
+                <p><strong>Ingredients:</strong> <%= drink.ingredients.join(', ') %></p>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

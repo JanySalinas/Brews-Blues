@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Virgin Piña Colada",
+      "ingredients": [
+        "Pineapple Juice",
+        "Coconut Cream",
+        "Ice",
+        "Pineapple Slice"
+      ],
+      "image": "/image/virgin.jpg",
+      "description": "A creamy, tropical classic without the rum.",
+      "price": 6.99
+    },
+    {
+      "id": 2,
+      "name": "Shirley Temple",
+      "ingredients": [
+        "Ginger Ale",
+        "Grenadine",
+        "Maraschino Cherry"
+      ],
+      "image": "/image/shirley.jpg",
+      "description": "A sweet and fizzy favorite topped with a cherry.",
+      "price": 5.49
+    },
+    {
+      "id": 3,
+      "name": "Nojito",
+      "ingredients": [
+        "Mint Leaves",
+        "Lime Juice",
+        "Sugar",
+        "Soda Water"
+      ],
+      "image": "/image/nojito.webp",
+      "description": "A refreshing mint and lime drink, just like a Mojito but alcohol-free.",
+      "price": 5.99
+    },
+    {
+      "id": 4,
+      "name": "Roy Rogers",
+      "ingredients": [
+        "Cola",
+        "Grenadine",
+        "Maraschino Cherry"
+      ],
+      "image": "/image/roy.jpg",
+      "description": "A bold and sweet cola-based mocktail with a cherry twist.",
+      "price": 5.79
+    }
+  ]
+  

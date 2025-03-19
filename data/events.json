@@ -1,0 +1,55 @@
+[
+    {
+      "id": 1,
+      "title": "Country Rock Night",
+      "date": "2025-03-22",
+      "time": "20:00",
+      "artist": "Chris Stapleton",
+      "image": "/image/chris.jpg",
+      "description": "Experience a night of electrifying country rock with Chris Stapleton!",
+      "venue": "Blues and Brews",
+      "tickets": "Available",
+      "songLink": "https://www.youtube.com/embed/4zAThXFOy2c", 
+      "ticketsLink": "https://chrisstapleton.com/tour/"
+    },
+    {
+      "id": 2,
+      "title": "Soulful Rhythm Night",
+      "date": "2025-04-15",
+      "time": "19:00",
+      "artist": "Leon Thomas",
+      "image": "/image/leon.jpg",
+      "description": "Enjoy a soulful rhythm night with Leon Thomas, bringing you the best of soul and jazz.",
+      "venue": "Blues and Brews",
+      "tickets": "Sold Out",
+      "songLink": "https://www.youtube.com/embed/ejEzHE5ZMT8", 
+      "ticketsLink": "https://www.leonthomas.com/tour/"
+    },
+    {
+      "id": 3,
+      "title": "Rock Party",
+      "date": "2025-04-20",
+      "time": "21:00",
+      "artist": "Kid Rock",
+      "image": "/image/kid1.jpg",
+      "description": "Get ready to rock out with Kid Rock in an unforgettable rock party!",
+      "venue": "Blues and Brews",
+      "tickets": "Available",
+      "songLink": "https://www.youtube.com/embed/rKFx0MMqb48", 
+      "ticketsLink": "https://kidrock.com/pages/tour"
+    },
+    {
+      "id": 4,
+      "title": "Blues Revival Night",
+      "date": "2025-04-25",
+      "time": "19:30",
+      "artist": "Christone 'Kingfish' Ingram",
+      "image": "/image/kingfish.jpg",
+      "description": "Witness the blues revival with Christone 'Kingfish' Ingram, a night filled with blues mastery.",
+      "venue": "Blues and Brews",
+      "tickets": "Available",
+      "songLink": "https://www.youtube.com/embed/QdC99sQRd1s", 
+      "ticketsLink": "https://www.christonekingfishingram.com/kingfish-tour/"
+    }
+  ]
+  
