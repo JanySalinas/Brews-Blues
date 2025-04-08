@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/confirmation.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="/css/events.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/reservation.css">
+  <link rel="stylesheet" href="/css/reservationconfirmation.css">
+  <!-- Responsive stylesheet should be imported last -->
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <!-- Header partial -->
+  <%- include('partials/header') %>
+
+  <!-- Main body content will be injected here -->
+  <main>
+    <%- body %>
+  </main>
+
+  <!-- Footer partial -->
+  <%- include('partials/footer') %>
+</body>
+</html>

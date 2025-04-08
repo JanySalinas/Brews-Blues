@@ -51,3 +51,12 @@ body {
     background-color: #d35400;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .container ul li a {
+      display: block !important;
+      width: 100% !important;
+      margin: 10px 0 !important;
+      text-align: center !important;
+    }
+  }
