@@ -10,7 +10,7 @@ const sequelize = require('./config/database');
 const Nuts = require('./models/Nuts');
 const Drinks = require('./models/Drinks');
 const Beers = require('./models/Beers');
-const NonAlcoholic = require('./models/nonAlcoholic');
+const NonAlcoholic = require('./models/NonAlcoholic');
 const Mocktails = require('./models/Mocktails');
 
 app.set('view engine', 'ejs');
