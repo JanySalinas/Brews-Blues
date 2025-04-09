@@ -1,15 +1,15 @@
-const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
+const { DataTypes } = require('sequelize');
 
 const Events = sequelize.define('Events', {
+  title: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
-  },
-  title: {
-    type: DataTypes.STRING,
-    allowNull: false
   },
   date: {
     type: DataTypes.DATEONLY,

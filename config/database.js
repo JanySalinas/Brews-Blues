@@ -1,15 +1,22 @@
-const { Sequelize } = require('sequelize');
+const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(
-  process.env.DB_NAME || 'Brews_Blues',
-  process.env.DB_USER || 'root',
-  process.env.DB_PASS || 'admin',
-  {
-    host: process.env.DB_HOST || 'localhost',
-    dialect: 'mysql',
-    port: process.env.DB_PORT || 3000,
-  }
-);
+// Hent DATABASE_URL fra miljøvariabelen
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: 'mysql',
+  protocol: 'mysql',
+  dialectOptions: {
+    useUTC: false, // For tidssonehåndtering
+  },
+  timezone: 'Etc/GMT+0', // Tidssoneinnstillinger
+});
 
-module.exports = sequelize;
-  
+// Test tilkoblingen
+sequelize.authenticate()
+  .then(() => {
+    console.log('Database tilkoblet!');
+  })
+  .catch((error) => {
+    console.error('Kan ikke koble til databasen:', error);
+  });
+
+  module.exports = sequelize;
