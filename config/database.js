@@ -5,9 +5,7 @@ const sequelize = new Sequelize(process.env.DATABASE_URL, {
   dialect: 'mysql',
   protocol: 'mysql',
   dialectOptions: {
-    useUTC: false, // For tidssonehåndtering
   },
-  timezone: 'Etc/GMT+0', // Tidssoneinnstillinger
 });
 
 // Test tilkoblingen
@@ -19,4 +17,4 @@ sequelize.authenticate()
     console.error('Kan ikke koble til databasen:', error);
   });
 
-  module.exports = sequelize;
+module.exports = sequelize;
