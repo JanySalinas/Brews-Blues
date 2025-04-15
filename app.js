@@ -108,6 +108,8 @@ app.get('/menu', async (req, res) => {
     const nutsData = await Nuts.findAll();
     const nonAlcoholicData = await NonAlcoholic.findAll();
     const mocktailsData = await Mocktails.findAll();
+    console.log(drinksData);
+    
     res.render('menu', { 
       drinks: drinksData, 
       beers: beersData, 
@@ -119,6 +121,8 @@ app.get('/menu', async (req, res) => {
     console.error('Error fetching menu data:', error);
     res.status(500).send("Database error while fetching menu data.");
   }
+ 
+  
 });
 
 app.get('/drinks', async (req, res) => {
