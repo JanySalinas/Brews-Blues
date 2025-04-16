@@ -142,8 +142,11 @@ app.get('/drinks', async (req, res) => {
 // Drinks detail route
 app.get('/drinks/:id', async (req, res) => {
   try {
-    const drink = await Drinks.findByPk(parseInt(req.params.id, 10));
-    if (!drink) return res.status(404).send("Drink not found");
+    const drinkId = parseInt(req.params.id, 10);
+    const drink = await Drinks.findByPk(drinkId);
+    if (!drink) {
+      return res.status(404).send("Drink not found");
+    }
     res.render('detail', { drink });
   } catch (error) {
     console.error('Error retrieving drink:', error);

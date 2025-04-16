@@ -8,13 +8,21 @@
 <body>
   <div class="drink-detail-container">
     <h1><%= drink.name %></h1>
-    <img class="detail-img" src="<%= drink.image %>" alt="<%= drink.name %>">
+    <% if (drink.image) { %>
+      <img class="detail-img" src="<%= drink.image %>" alt="<%= drink.name %>">
+    <% } else { %>
+      <p>No image available</p>
+    <% } %>
     <p><%= drink.description %></p>
-    <ul>
-      <% drink.ingredients.forEach(item => { %>
-        <li><%= item %></li>
-      <% }) %>
-    </ul>
+    <% if (drink.ingredients && drink.ingredients.length) { %>
+      <ul>
+        <% drink.ingredients.forEach(item => { %>
+          <li><%= item %></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No ingredients available.</p>
+    <% } %>
     <a href="/menu">Back to menu</a>
   </div>
 </body>
