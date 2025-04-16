@@ -147,7 +147,7 @@ app.get('/drinks/:id', async (req, res) => {
     if (!drink) {
       return res.status(404).send("Drink not found");
     }
-    res.render('detail', { drink });
+    res.render('Detail', { drink });
   } catch (error) {
     console.error('Error retrieving drink:', error);
     res.status(500).send("Database error while fetching drink details.");
