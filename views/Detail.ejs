@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Link to your main stylesheet -->
   <link rel="stylesheet" href="/style.css">
+  <!-- Link to your responsive stylesheet -->
   <link rel="stylesheet" href="/css/responsive.css">
+  <!-- Set the title to the drink's name -->
   <title><%= drink.name %></title>
 </head>
 <body>
+  <!-- Container for the drink details -->
   <div class="drink-detail-container">
+    <!-- Drink name -->
     <h1><%= drink.name %></h1>
+
+    <!-- Check if there's an image for the drink -->
     <% if (drink.image) { %>
+      <!-- Display the image -->
       <img class="detail-img" src="<%= drink.image %>" alt="<%= drink.name %>">
     <% } else { %>
+      <!-- Fallback if no image is available -->
       <p>No image available</p>
     <% } %>
+
+    <!-- Display the drink description -->
     <p><%= drink.description %></p>
+
+    <!-- Check if ingredients exist and if it has any items -->
     <% if (drink.ingredients && drink.ingredients.length) { %>
+      <!-- If so, create a list of ingredients -->
       <ul>
         <% drink.ingredients.forEach(item => { %>
           <li><%= item %></li>
-        <% }) %>
+        <% }); %>
       </ul>
     <% } else { %>
+      <!-- Fallback if no ingredients available -->
       <p>No ingredients available.</p>
     <% } %>
+
+    <!-- Link to go back to the menu page -->
     <a href="/menu">Back to menu</a>
   </div>
 </body>
