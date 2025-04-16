@@ -7,7 +7,7 @@
       "Vodka",
       "Water"
     ],
-    "image": "/image/lemonade.jpg",
+    "image": "/image/Lemonade.jpg",
     "description": "A refreshing citrus drink with vodka.",
     "price": 5.99
   },
@@ -111,7 +111,7 @@
       "Cranberry Juice",
       "Lime Juice"
     ],
-    "image":"/image/cosmopolitan.jpg",
+    "image":"/image/Cosmopolitan.jpg",
     "description": "A tangy and fruity cocktail popularized by 'Sex and the City.'",
     "price": 11.99
   },
